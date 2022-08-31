@@ -13,18 +13,22 @@
 //
 void my_console_logger(ulog_level_t severity, char *msg)
 {
+#if defined ULOG_ENABLED
   printf("console: %s [%s]: %s\n",
          "time", // user defined function
-         ulog_level_name(severity),
+         ULOG_LEVEL_NAME(severity),
          msg);
+#endif
 }
 
 void my_file_logger(ulog_level_t severity, char *msg)
 {
+#if defined ULOG_ENABLED
   printf("file: %s [%s]: %s\n",
          "time", // user defined function
-         ulog_level_name(severity),
+         ULOG_LEVEL_NAME(severity),
          msg);
+#endif
 }
 
 int main()
