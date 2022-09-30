@@ -31,7 +31,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #include "ulog.h"
 
-#ifdef ULOG_ENABLED  // whole file...
+//#ifdef ULOG_ENABLED  // whole file...
 
 #include <stdio.h>
 #include <string.h>
@@ -127,4 +127,4 @@ void ulog_message(ulog_level_t severity, const char *fmt, ...) {
 // =============================================================================
 // private code
 
-#endif  // #ifdef ULOG_ENABLED
+//#endif  // #ifdef ULOG_ENABLED
